@@ -26,9 +26,9 @@ describe "Items API" do
   end
 
   it "can create a new item" do
-    item_params = { name: "Saw", description: "I want to play a game"}
+    item_params = { name: "octopus cactus", description: "a very prickly and smart plant creature"}
 
-    post "/api/v1/items", params: {itme: item_params}
+    post "/api/v1/items", params: {item: item_params}
     item = Item.last
 
     expect(response).to be_successful
