@@ -14,7 +14,7 @@ describe "Items API" do
   end
 
   it "can get one item by its id" do
-    #expect newly created item id to match the response item id when we request it 
+    #expect newly created item id to match the response item id when we request it
     id = create(:item).id
 
     get "/api/v1/items/#{id}" # send request to API endpoint
@@ -23,5 +23,15 @@ describe "Items API" do
 
     expect(response).to be_successful
     expect(item["id"]).to eq(id)
+  end
+
+  it "can create a new item" do
+    item_params = { name: "Saw", description: "I want to play a game"}
+
+    post "/api/v1/items", params: {itme: item_params}
+    item = Item.last
+
+    expect(response).to be_successful
+    expect(item.name).to eq(item_params[:name])
   end
 end
