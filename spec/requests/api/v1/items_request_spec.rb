@@ -7,5 +7,7 @@ describe "Items API" do
     get '/api/v1/items' #sends get request to api/v1/items endpoint
 
     expect(response).to be_successful
+
+    items = JSON.parse(response.body)
   end
 end
