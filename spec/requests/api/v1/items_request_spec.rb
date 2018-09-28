@@ -9,5 +9,19 @@ describe "Items API" do
     expect(response).to be_successful
 
     items = JSON.parse(response.body)
+
+    expect(items.count).to eq(3)
+  end
+
+  it "can get one item by its id" do
+    #expect newly created item id to match the response item id when we request it 
+    id = create(:item).id
+
+    get "/api/v1/items/#{id}" # send request to API endpoint
+
+    item = JSON.parse(response.body)
+
+    expect(response).to be_successful
+    expect(item["id"]).to eq(id)
   end
 end
