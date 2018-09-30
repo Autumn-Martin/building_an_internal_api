@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is the result of watching tutorials to learn about building an internal api & customizing it with JSON. This project follows the following tutorials by Mike Dao & Turing School of Software and Design:
 
-Things you may want to cover:
+* Building An Internal API:
+https://www.youtube.com/watch?v=R5FPYQgB6Zc&list=PL1Y67f0xPzdOq2FcpWnawJeyJ3ELUdBkJ&index=1
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Customizing JSON in Your API:
+https://www.youtube.com/watch?v=cv1VQ_9OqvE&list=PL1Y67f0xPzdOq2FcpWnawJeyJ3ELUdBkJ&index=2
